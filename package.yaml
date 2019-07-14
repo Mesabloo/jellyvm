@@ -19,6 +19,7 @@ description:         Please see the README on GitHub at <https://github.com/Mesa
 
 dependencies:
 - base >= 4.7 && < 5
+- criterion-measurement
 
 library:
   source-dirs: src

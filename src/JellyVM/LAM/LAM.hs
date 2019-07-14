@@ -1,10 +1,10 @@
 {-# LANGUAGE UnicodeSyntax, RankNTypes, GADTs, NoImplicitPrelude #-}
 
-module LAM.LAM where
+module JellyVM.LAM.LAM where
 
-import LL.Types (Combinator((:<>)), Combinator((:<)), Combinator((:⌷)), Combinator((:⎨)), Combinator((:∘)), Combinator((:×)), Value((:⌟)), Value((:·)))
-import qualified LL.Types as LL
-import LAM.Types
+import JellyVM.LL.Types (Combinator((:<>)), Combinator((:<)), Combinator((:⌷)), Combinator((:⎨)), Combinator((:∘)), Combinator((:×)), Value((:⌟)), Value((:·)))
+import qualified JellyVM.LL.Types as LL
+import JellyVM.LAM.Types
 import Prelude (($), (.), error)
 import Debug.Trace (traceShow)
 

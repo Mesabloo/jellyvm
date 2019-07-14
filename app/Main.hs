@@ -1,12 +1,25 @@
+{-# LANGUAGE ScopedTypeVariables #-}
+
 module Main where
 
-import LL.Types
-import LL.LL
-import LAM.LAM
-import LAM.Types (Dump (Null))
+import JellyVM.LL.Types
+import JellyVM.LL.LL
+import JellyVM.LAM.LAM
+import JellyVM.LAM.Types (Dump (Null))
+import Criterion.Measurement (secs, getTime)
 
 main :: IO ()
-main = print $ run (linear add) (one :⌟ two) Null
+main = do
+    (t, res) <- time $ run (linear add) (one :⌟ two) Null
+    print res
+    putStrLn $ "In " <> secs t
+
+time :: a -> IO (Double, a)
+time f = do
+    begin  <- getTime
+    let result = f
+    end    <- getTime
+    pure $ (,) (end - begin) result
 
 zero = Zero' :· Unit
 one = Succ :· zero

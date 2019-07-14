@@ -1,9 +1,9 @@
 {-# LANGUAGE UnicodeSyntax, DataKinds, KindSignatures, GADTs, RankNTypes, NoImplicitPrelude, TypeOperators, ScopedTypeVariables, FlexibleInstances #-}
 
-module LAM.Types where
+module JellyVM.LAM.Types where
 
-import LL.Types (Term((:⊗)), Term((:&)), Term((:⊸)), Term((:!)), Term(), Value())
-import qualified LL.Types as LL
+import JellyVM.LL.Types (Term((:⊗)), Term((:&)), Term((:⊸)), Term((:!)), Term(), Value())
+import qualified JellyVM.LL.Types as LL
 import Prelude(Show(..), String, (<>))
 
 data Dump (d :: [Term]) :: * where

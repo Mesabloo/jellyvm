@@ -1,10 +1,10 @@
 {-# LANGUAGE UnicodeSyntax, NoImplicitPrelude, ExistentialQuantification, KindSignatures, DataKinds, GADTs, TypeOperators #-}
 
-module LL.LL where
+module JellyVM.LL.LL where
 
 import Prelude (($), (.), error)
 import Debug.Trace (traceShow)
-import LL.Types
+import JellyVM.LL.Types
 
 app :: ∀ (a :: Term) (b :: Term). a ⟶ b → Value a → Value b
 app Id u = u

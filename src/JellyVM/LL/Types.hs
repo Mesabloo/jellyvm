@@ -1,6 +1,6 @@
 {-# LANGUAGE UnicodeSyntax, NoImplicitPrelude, ExistentialQuantification, KindSignatures, DataKinds, GADTs, TypeOperators #-}
 
-module LL.Types where
+module JellyVM.LL.Types where
 
 import Prelude (Show(..), (<>), undefined)
 

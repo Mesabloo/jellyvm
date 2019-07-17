@@ -1,5 +1,4 @@
 # JellyVM
 
-The Jelly VM is a project of making a VM based on the LAM to run some [blob](https://github.com/mesabloo/blob) code.
-
-Highly inspired by [this implementation](https://github.com/nulvinge/Linear-Abstract-Machine).
+The JellyVM is an implementation of the [linear abstract machine](https://www.sciencedirect.com/science/article/pii/0304397588901004) designed for running some [blob](https://github.com/mesabloo/blob) code.
+It is based on [this implementation](https://github.com/nulvinge/Linear-Abstract-Machine).
